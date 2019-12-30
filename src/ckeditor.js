@@ -29,7 +29,7 @@ import Font from '@ckeditor/ckeditor5-font/src/font';
 import WordCount from '@ckeditor/ckeditor5-word-count/src/wordcount';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock';
-
+import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
@@ -55,7 +55,8 @@ ClassicEditor.builtinPlugins = [
 	Font,
 	WordCount,
 	Alignment,
-	CodeBlock
+	CodeBlock,
+	ImageResize
 ];
 
 // Editor configuration.
@@ -99,5 +100,5 @@ ClassicEditor.defaultConfig = {
 		]
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
-	language: 'en'
+	language: 'zh-cn'
 };
